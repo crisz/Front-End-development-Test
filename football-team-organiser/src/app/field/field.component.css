@@ -1,16 +1,4 @@
-.container {
-  display: flex;
-}
-
-.players {
-  flex: 1;
-}
-
-.field-container {
-  flex: 1;
-}
-
-.field {
+:host {
   display: block;
   width: 366px;
   height: 488px;

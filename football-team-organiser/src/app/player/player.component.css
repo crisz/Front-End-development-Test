@@ -1,0 +1,19 @@
+.card {
+  margin: 5px;
+  display: inline-block;
+  width: 180px;
+  height: 80px;
+  background: white;
+  z-index: 2;
+  border-radius: 5px;
+  background: rgba(34, 116, 14, 0.561);
+  border: solid 1px white;
+  color: white;
+  text-align: center;
+  cursor: move;
+  line-height: 30px;
+}
+
+:host {
+  z-index: 2;
+}
