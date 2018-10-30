@@ -1,0 +1,9 @@
+<div class="cards-container">
+  <app-card *ngFor="let city of cityList" [cityId]="city.id" [cityName]="city.name" [unit]="unit">
+  </app-card>
+</div>
+
+<div class="button-container">
+  <button class="btn" *ngIf="unit==='K'" (click)="unit='C'">Show Celsius</button>
+  <button class="btn" *ngIf="unit==='C'" (click)="unit='K'">Show Kelvin</button>
+</div>

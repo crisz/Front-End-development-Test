@@ -1,0 +1,19 @@
+<div 
+  *ngIf="weatherDescription && weatherTemperature"
+  [class.card-inset-red]="weatherDescription!=='clear sky'"
+  [class.card-inset-green]="weatherDescription==='clear sky'"
+  class="card">
+  <div class="city-name">{{cityName}}</div>
+  <div class="lower-box">
+    <div class="description-container">
+      {{weatherDescription}}
+    </div>
+    <div class="temp-container">
+      Min: {{getTemp().temp_min}} °{{unit}} <br>
+      Max: {{getTemp().temp_max}} °{{unit}}
+    </div>
+  </div>
+  <div class="pressure-box">
+    Pressure: {{weatherTemperature.pressure}}
+  </div>
+</div>

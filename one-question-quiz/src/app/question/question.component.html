@@ -1,0 +1,12 @@
+<h2>{{question}}</h2>
+
+<div class="answers-container">
+  <div 
+    class="answer"
+    *ngFor="let answer of answers" 
+    (click)="chooseAnswer(answer)"
+    [class.answer--correct]="chosenAnswer===answer && chosenAnswer.correct"
+    [class.answer--wrong]="chosenAnswer===answer && !chosenAnswer.correct">
+    {{answer.answer}}
+  </div>
+</div>
